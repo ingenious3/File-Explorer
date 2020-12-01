@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.MainActivity">
+
+    <item
+        android:id="@+id/menuCancel"
+        android:icon="@drawable/ic_close_grey_24dp"
+        android:title="@string/cancel"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuPasteFile"
+        android:icon="@drawable/ic_content_paste_grey_24dp"
+        android:title="@string/paste"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/subMenu"
+        android:icon="@drawable/ic_folder_grey_24dp"
+        android:title="@string/options"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction">
+        <menu>
+            <item
+                android:id="@+id/menuNewFile"
+                android:icon="@drawable/ic_insert_drive_file_grey_24dp"
+                android:title="@string/new_file"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menuNewFolder"
+                android:icon="@drawable/ic_create_new_folder_grey_24dp"
+                android:title="@string/new_folder"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>
